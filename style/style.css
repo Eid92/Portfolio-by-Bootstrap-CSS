@@ -194,6 +194,16 @@ body {
 .skill img {
   width: 70%;
 }
+/* Animation for skills section */
+.skill {
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 /* Social Media */
 .social {
