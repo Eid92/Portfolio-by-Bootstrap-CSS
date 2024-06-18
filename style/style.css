@@ -320,15 +320,86 @@ span {
   #subscribe {
     display: none;
   }
-#sec{
-  margin-top: 0;
-}
+  #sec {
+    margin-top: 0;
+  }
   .skills {
     display: flex;
     flex-wrap: wrap;
     margin-top: 4rem;
   }
-  .skills .content-skills{
+  .skills .content-skills {
     display: inline-block;
   }
+  .card-body {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  .form-check {
+    margin-bottom: 1rem;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .hero-section h1,
+  .hero-section h4 {
+    display: block;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section h4 {
+    font-size: 1.5rem;
+  }
+  .hero-section .btn {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .hero-section h1,
+  .hero-section h4 {
+    display: inline;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .hero-section h1:after {
+    content: "\A";
+    white-space: pre;
+  }
+  .hero-section h1,
+  .hero-section h4,
+  .hero-section h3 {
+    white-space: nowrap;
+  }
+  .social {
+    display: flex;
+  }
+  .hero-section h4 {
+    display: inline;
+  }
+  .content-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skill {
+    flex: 0 0 30%;
+    margin: 1rem;
+    text-align: center;
+  }
+  .courses-header span{
+   margin-left: 80px;
+  }
+  .contact-header span{
+   margin-left: 80px;
+  }
 }
+
