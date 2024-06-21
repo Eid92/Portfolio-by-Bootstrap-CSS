@@ -140,7 +140,9 @@ body {
   transform: scale(0.9);
   transition: transform 0.5s ease;
 }
-
+.decription{
+  margin-left: 1%;
+}
 /* New Section */
 .new-section {
   margin-top: 17%;
