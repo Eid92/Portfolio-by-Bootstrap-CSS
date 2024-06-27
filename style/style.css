@@ -213,16 +213,25 @@ body {
 /* Social Media */
 .social {
   margin-left: -15px;
+  display: flex; /* Ensure the social media icons are displayed in a row */
+}
+
+.social a {
+  margin: 0 10px; /* Adjust spacing between icons */
 }
 
 .social a i {
-  transition: 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-size: 1.5rem; /* Adjust the initial size of the icons */
 }
 
-.social a:hover i {
-  transform: scale(1.9);
-  font-size: 2.2rem;
+.social a i:hover {
+  transform: scale(1.5); /* Adjust the scale to make icons bigger on hover */
+  color: rgb(51, 175, 51);
+  font-size: 2rem;
 }
+
+
 
 /* Typography */
 h1 {
@@ -273,14 +282,15 @@ span {
   }
 
   .content-skills {
-    margin-top: 2rem;
-    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure equal spacing between columns */
   }
 
   .skill {
-    width: 80px;
-    height: 80px;
-    margin: 0 1rem 1rem 0;
+    flex: 0 0 calc(33.33% - 2rem); /* Adjust width to fit three columns with spacing */
+    margin: 1rem; /* Adjust margin as needed */
+    text-align: center;
   }
 
   #subscribe {
@@ -289,10 +299,7 @@ span {
 }
 
 @media (max-width: 768px) {
-  .container-skills {
-    width: 100%;
-    text-align: center;
-  }
+
 
   .container-img {
     display: none;
@@ -316,7 +323,6 @@ span {
 }
 
 @media (min-width: 428px) and (max-width: 992px) {
-  .about-img,
   .container-img,
   #contact-img,
   #subscribe {
@@ -325,28 +331,46 @@ span {
   #sec {
     margin-top: 0;
   }
-  .skills {
+  .about-img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .content-skills {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
-  .skills .content-skills {
-    display: inline-block;
+  
+  .skill {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
   .card-body {
     padding-right: 15px;
     padding-left: 15px;
   }
+  
   .form-group {
     margin-bottom: 1rem;
   }
+  
   .form-check {
     margin-bottom: 1rem;
   }
+  
   .btn {
     padding: 10px 20px;
     font-size: 1rem;
   }
+  
   .hero-section h1,
   .hero-section h4 {
     display: block;
@@ -354,54 +378,158 @@ span {
     line-height: 1.5;
     text-align: center;
   }
+  
   .hero-section h1 {
     font-size: 2.5rem;
   }
+  
   .hero-section h4 {
     font-size: 1.5rem;
   }
+  
   .hero-section .btn {
     display: block;
     margin: 1rem auto;
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
+  
   .hero-section h1,
   .hero-section h4 {
     display: inline;
     margin: 0;
     line-height: 1.5;
   }
+  
   .hero-section h1:after {
     content: "\A";
     white-space: pre;
   }
+  
   .hero-section h1,
   .hero-section h4,
   .hero-section h3 {
     white-space: nowrap;
   }
+  
   .social {
     display: flex;
   }
+  
   .hero-section h4 {
     display: inline;
   }
+  
   .content-skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+  
   .skill {
     flex: 0 0 30%;
     margin: 1rem;
     text-align: center;
   }
-  .courses-header span{
-   margin-left: 80px;
+  
+  .courses-header span,
+  .contact-header span {
+    margin-left: 80px;
   }
-  .contact-header span{
-   margin-left: 80px;
+  
+  .card {
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    max-width: 19rem;
+    background-color: #22282a;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .card-body {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-check {
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .hero-section h1,
+  .hero-section h4 {
+    display: block;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-section h4 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-section .btn {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .hero-section h1,
+  .hero-section h4 {
+    display: inline;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .hero-section h1:after {
+    content: "\A";
+    white-space: pre;
+  }
+  
+  .hero-section h1,
+  .hero-section h4,
+  .hero-section h3 {
+    white-space: nowrap;
+  }
+  
+  .social {
+    display: flex;
+  }
+  
+  .hero-section h4 {
+    display: inline;
+  }
+  
+  .content-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill {
+    flex: 0 0 30%;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .courses-header span,
+  .contact-header span {
+    margin-left: 80px;
   }
 }
+
 
