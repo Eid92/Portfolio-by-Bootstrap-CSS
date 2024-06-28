@@ -149,15 +149,32 @@ body {
 }
 
 /* Cards */
-.card {
+.card-custom {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-left: 15px;
+  background-color: #22282a;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
-.card:hover {
+.card-img-top-custom {
+  border-radius: 50px;
+}
+.card-body-custom {
+  margin-top: -17px;
+}
+.card-title-custom {
+  margin-top: 1.5rem; /* Adjust margin as needed */
+}
+.card-footer-custom {
+  color: #28a745;
+}
+.card-custom:hover {
   transform: scale(1.05);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
-
 /* Skills Section */
 .skills {
   padding: 2rem var(--padding);
@@ -349,35 +366,19 @@ span {
     border-radius: 50px;
     margin: 0 2rem 2rem 0;
     display: flex;
+    flex: 0 0 23%;
     align-items: center;
     justify-content: center;
+    margin: 0.5rem;
+    text-align: center;
   }
   
   .card-body {
     padding-right: 15px;
     padding-left: 15px;
   }
-  
-  .form-group {
-    margin-bottom: 1rem;
-  }
-  
-  .form-check {
-    margin-bottom: 1rem;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
-  
-  .hero-section h1,
-  .hero-section h4 {
-    display: block;
-    margin: 0 auto;
-    line-height: 1.5;
-    text-align: center;
-  }
+
+
   
   .hero-section h1 {
     font-size: 2.5rem;
@@ -401,10 +402,7 @@ span {
     line-height: 1.5;
   }
   
-  .hero-section h1:after {
-    content: "\A";
-    white-space: pre;
-  }
+
   
   .hero-section h1,
   .hero-section h4,
@@ -419,28 +417,16 @@ span {
   .hero-section h4 {
     display: inline;
   }
+
   
-  .content-skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .skill {
-    flex: 0 0 30%;
-    margin: 1rem;
-    text-align: center;
-  }
-  
-  .courses-header span,
-  .contact-header span {
+  .courses-header span{
     margin-left: 80px;
   }
   
   .card {
     margin: 0 auto 2rem auto;
     width: 100%;
-    max-width: 19rem;
+    max-width: 23rem;
     background-color: #22282a;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -465,47 +451,8 @@ span {
     font-size: 1rem;
   }
   
-  .hero-section h1,
-  .hero-section h4 {
-    display: block;
-    margin: 0 auto;
-    line-height: 1.5;
-    text-align: center;
-  }
-  
-  .hero-section h1 {
-    font-size: 2.5rem;
-  }
-  
-  .hero-section h4 {
-    font-size: 1.5rem;
-  }
-  
-  .hero-section .btn {
-    display: block;
-    margin: 1rem auto;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-  
-  .hero-section h1,
-  .hero-section h4 {
-    display: inline;
-    margin: 0;
-    line-height: 1.5;
-  }
-  
-  .hero-section h1:after {
-    content: "\A";
-    white-space: pre;
-  }
-  
-  .hero-section h1,
-  .hero-section h4,
-  .hero-section h3 {
-    white-space: nowrap;
-  }
-  
+
+
   .social {
     display: flex;
   }
@@ -513,21 +460,10 @@ span {
   .hero-section h4 {
     display: inline;
   }
-  
-  .content-skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .courses-header span {
+    margin-left: 80px;
   }
-  
-  .skill {
-    flex: 0 0 30%;
-    margin: 1rem;
-    text-align: center;
-  }
-  
-  .courses-header span,
-  .contact-header span {
+  #contact{
     margin-left: 80px;
   }
 }
