@@ -339,7 +339,7 @@ span {
   }
 }
 
-@media (min-width: 428px) and (max-width: 992px) {
+@media (min-width: 428px) and (max-width: 993px) {
   .container-img,
   #contact-img,
   #subscribe {
@@ -360,7 +360,7 @@ span {
   }
   
   .skill {
-    width: 50px;
+    width: 150px;
     height: 50px;
     background-color: #ffffff;
     border-radius: 50px;
@@ -424,6 +424,16 @@ span {
   }
   
   .card {
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    max-width: 19rem;
+    background-color: #22282a;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .card-contact {
     margin: 0 auto 2rem auto;
     width: 100%;
     max-width: 23rem;
