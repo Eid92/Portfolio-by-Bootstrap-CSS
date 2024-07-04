@@ -352,13 +352,16 @@ span {
     width: 50%;
     height: auto;
   }
-  
+
   .content-skills {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
   }
-  
+  .skills-row{
+    display: flex;
+    justify-content: center;
+  }
   .skill {
     width: 150px;
     height: 50px;
@@ -401,8 +404,9 @@ span {
     margin: 0;
     line-height: 1.5;
   }
+  
 
-  .hero-section h1:after {
+    .hero-section h1:after {
     content: "\A";
     white-space: pre;
   }
