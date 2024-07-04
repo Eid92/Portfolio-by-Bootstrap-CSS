@@ -401,9 +401,11 @@ span {
     margin: 0;
     line-height: 1.5;
   }
-  
 
-  
+  .hero-section h1:after {
+    content: "\A";
+    white-space: pre;
+  }
   .hero-section h1,
   .hero-section h4,
   .hero-section h3 {
